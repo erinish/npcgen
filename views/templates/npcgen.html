@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>{{ classname }}</title>
+    </head>
+    <body>
+        Class: {{ classname }}<br/>
+        HP: {{ hp }}<br/>
+        BAB: {{ bab }}<br/>
+
+        Str: {{ stats[0] }}<br/>
+        Dex: {{ stats[1] }}<br/> 
+        Con: {{ stats[2] }}<br/> 
+        Wis: {{ stats[3] }}<br/> 
+        Int: {{ stats[4] }}<br/> 
+        Cha: {{ stats[5] }}<br/> 
+
+        Skill Points: {{ skillpoints }}<br/>
+
+        <h2>Class Skills</h2><br/>
+        {% for skill in skills %}
+        {{ skill }}<br/>
+        {% endfor %}
+
+        <h2>Class Abilities</h2><br/>
+        {% for abil in abilities %}
+        <b>{{ abil[0] }}</b>({{ abil[1] }}):{{ abil[2]|nl2br }} <br/>
+        {% endfor %}
+    </body>
+</html>

@@ -1,0 +1,20 @@
+[Stat Weights]
+Str=1
+Dex=3
+Con=2
+Int=4
+Wis=5
+Cha=6
+
+[Equipment]
+
+[Feats]
+
+[Ability]
+Level4=Str
+Level8=Str
+Level12=Str
+Level16=Str
+Level20=Str
+
+[Skills]
